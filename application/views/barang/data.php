@@ -29,6 +29,7 @@
                     <th>Jenis Barang</th>
                     <th>Stok</th>
                     <th>Satuan</th>
+                    <th>QR</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -45,9 +46,11 @@
                             <td><?= $b['nama_jenis']; ?></td>
                             <td><?= $b['stok']; ?></td>
                             <td><?= $b['nama_satuan']; ?></td>
+                            <td><img src='./assets/images/<?= $b['qrcode']; ?>' width="200px" height="200px"></td>
                             <td>
                                 <a href="<?= base_url('barang/edit/') . $b['id_barang'] ?>" class="btn btn-warning btn-circle btn-sm"><i class="fa fa-edit"></i></a>
                                 <a onclick="return confirm('Yakin ingin hapus?')" href="<?= base_url('barang/delete/') . $b['id_barang'] ?>" class="btn btn-danger btn-circle btn-sm"><i class="fa fa-trash"></i></a>
+                                <a href="<?= base_url('barang/detail/') . $b['id_barang'] ?>" class="btn btn-info btn-circle btn-sm"><i class="fa fa-info"></i></a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
