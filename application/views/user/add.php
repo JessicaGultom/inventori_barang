@@ -77,6 +77,10 @@
                             <input <?= set_radio('role', 'gudang'); ?> value="gudang" type="radio" id="gudang" name="role" class="custom-control-input">
                             <label class="custom-control-label" for="gudang">Gudang</label>
                         </div>
+                        <div class="custom-control custom-radio">
+                            <input <?= set_radio('role', 'manager'); ?> value="manager" type="radio" id="manager" name="role" class="custom-control-input">
+                            <label class="custom-control-label" for="manager">Manager</label>
+                        </div>
                         <?= form_error('role', '<span class="text-danger small">', '</span>'); ?>
                     </div>
                 </div>
