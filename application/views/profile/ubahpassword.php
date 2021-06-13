@@ -10,7 +10,7 @@
                 <?= $this->session->flashdata('pesan'); ?>
                 <?= form_open(); ?>
                 <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="password_lama">Password Lama</label>
+                    <label class="col-md-3 text-md-right" for="password_lama">Password Sekarang</label>
                     <div class="col-md-9">
                         <input value="<?= set_value('password_lama'); ?>" name="password_lama" id="password_lama" type="password" class="form-control" placeholder="Password Lama...">
                         <?= form_error('password_lama', '<small class="text-danger">', '</small>'); ?>
